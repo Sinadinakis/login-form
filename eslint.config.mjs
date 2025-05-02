@@ -7,7 +7,6 @@ export default withNuxt(
         rules: {
             'indent': ['error', 4],
             'vue/no-deprecated-slot-attribute': 'off',
-            '@stylistic/indent': ['error', 4],
             '@typescript-eslint/unified-signatures': 'off',
         },
     },

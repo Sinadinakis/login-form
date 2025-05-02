@@ -29,7 +29,7 @@ describe('useMainStore', () => {
 
         const stored = JSON.parse(localStorage.getItem('user')!);
         expect(stored.email).toBe('test@example.com');
-        expect(stored.password).toBe('secret');
+        expect(stored.password).toBe('test_password');
         expect(stored.subscribe).toBe(true);
     });
 
