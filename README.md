@@ -40,7 +40,6 @@ npm run dev
 
 Make sure to install dependencies:
 
-```bash
 # npm
 npm install
 ```
