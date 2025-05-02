@@ -7,6 +7,5 @@
 </template>
 
 <script setup>
-    import '@provetcloud/css';
-    import UserLogin from '~/pages/login/UserLogin.vue';
+    import UserLogin from '~/components/UserLogin.vue';
 </script>
