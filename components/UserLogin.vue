@@ -1,6 +1,6 @@
 <template>
 	<provet-stack style="max-width: 340px; margin: var(--n-space-xl) auto">
-		<Banner
+		<BannerMsg
 			:email="email"
 			:password="password"
 			:error-message="errorMessage"
@@ -32,7 +32,8 @@
 						hide-required
 						name="password"
 						:type="showPassword ? 'text' : 'password'"
-						placeholder="••••••••"
+            :error="(password.length > 3 && !debouncedPasswordValid) ? 'Provide valid password' : ''"
+            placeholder="••••••••"
 					>
 						<provet-button
 							slot="end"
@@ -69,7 +70,7 @@
 		<provet-toast-group>
 			<provet-toast
 				v-if="mainStore.isLogout"
-				auto-dismiss="5000"
+				:auto-dismiss="5000"
 			>
 				Logout Successfully
 			</provet-toast>
