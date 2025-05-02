@@ -1,5 +1,5 @@
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin } from '#app';
 
 export default defineNuxtPlugin(() => {
-    import('@provetcloud/web-components')
-})
+    import('@provetcloud/web-components');
+});

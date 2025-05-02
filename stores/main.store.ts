@@ -10,7 +10,7 @@ export const useMainStore = defineStore('main', () => {
         subscribe.value = newSubscribe;
         isLoggedIn.value = true;
         localStorage.setItem('user', JSON.stringify({ email: newEmail, password: newPassword, subscribe: newSubscribe }));
-    }
+    };
 
     const loadFromStorage = () => {
         const stored = localStorage.getItem('user');
@@ -18,7 +18,7 @@ export const useMainStore = defineStore('main', () => {
             const { email: storedEmail, password: storedPassword, subscribe: storedSubscribe } = JSON.parse(stored);
             setUserData(storedEmail, storedPassword, storedSubscribe);
         }
-    }
+    };
 
     const reset = () => {
         email.value = '';
@@ -27,7 +27,7 @@ export const useMainStore = defineStore('main', () => {
         isLoggedIn.value = false;
         isLogout.value = true;
         localStorage.removeItem('user');
-    }
+    };
 
     return {
         email,

@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <Header />
-        <slot />
-    </div>
+	<div>
+		<Header />
+		<slot />
+	</div>
 </template>
 
 <script lang="ts" setup>
-    import '@provetcloud/css';
+import '@provetcloud/css';
 </script>
