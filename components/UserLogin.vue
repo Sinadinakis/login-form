@@ -39,6 +39,7 @@
 							slot="end"
 							type="button"
 							variant="default"
+              @click="() => showPassword = !showPassword"
 						>
 							<provet-icon
 								size="s"
