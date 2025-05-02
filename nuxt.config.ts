@@ -3,12 +3,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   ssr: false, // Client-side rendering only
-  css: ['~/assets/css/main.css'],
+  css: [
+    '@/assets/css/main.css',
+  ],
   modules: [
     '@nuxt/test-utils/module',
     '@pinia/nuxt',
-    '@nuxt/fonts',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   pinia: {
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
